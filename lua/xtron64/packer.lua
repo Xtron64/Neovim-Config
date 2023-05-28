@@ -58,12 +58,19 @@ return require('packer').startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
   use({
+  'shaunsingh/nord.nvim',
+  config = function()
+	  nord_disable_background = true
+  end
+  })
+  use({
   "startup-nvim/startup.nvim",
   requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
   config = function()
     require"startup".setup()
   end
 })
+
 
 end)
 
