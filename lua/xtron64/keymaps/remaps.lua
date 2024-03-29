@@ -28,3 +28,20 @@ end)
 vim.keymap.set("n", "<leader>qa", function()
 	vim.cmd("qa!")
 end)
+-- Telescope navigate through file history:
+vim.keymap.set("n", "<leader>of", function()
+	vim.cmd("Telescope oldfiles")
+end)
+-- Treesitter:
+vim.keymap.set("n", "<leader>ts", function()
+	vim.cmd("Telescope treesitter")
+end)
+-- Livegrep:
+vim.keymap.set("n", "<leader>lg", function()
+	vim.cmd("Telescope live_grep")
+end)
+-- Filebrowser (telescope):
+vim.keymap.set("n", "<leader>fb", function()
+	vim.cmd("Telescope find_files")
+end)
+
